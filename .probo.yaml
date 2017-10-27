@@ -6,4 +6,4 @@ steps:
   - name: Apt-get upgrade packages.
     plugin: Script
     script:
-      - "ENV DEBIAN_FRONTEND=noninteractive apt-get upgrade"
+      - "RUN DEBIAN_FRONTEND=noninteractive apt-get upgrade"
