@@ -2,8 +2,8 @@ steps:
   - name: Apt-get update repositories.
     plugin: Script
     script:
-      - apt-get update
+      - apt-get -qq update
   - name: Apt-get upgrade packages.
     plugin: Script
     script:
-      - "RUN DEBIAN_FRONTEND=noninteractive apt-get upgrade"
+      - "DEBIAN_FRONTEND=noninteractive apt-get upgrade"
