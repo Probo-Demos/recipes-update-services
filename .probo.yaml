@@ -3,3 +3,7 @@ steps:
     plugin: Script
     script:
       - apt-get update
+  - name: Apt-get upgrade packages.
+    plugin: Script
+    script:
+      - apt-get upgrade -y
