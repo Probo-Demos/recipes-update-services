@@ -1,0 +1,5 @@
+steps:
+  - name: Apt-get update repositories.
+    plugin: Script
+    script:
+      - apt-get update
