@@ -1,7 +1,8 @@
 image: proboci/ubuntu-14.04-lamp
 steps:
-  - name: Checking apache and mysql version.
+  - name: Checking apache, mysql, and php version.
     plugin: Script
     script:
       - mysql --version
       - apache2 -version
+      - php -v
