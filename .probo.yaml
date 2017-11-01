@@ -1,9 +1,5 @@
 steps:
-  - name: Apt-get update repositories.
+  - name: Check mysql version.
     plugin: Script
     script:
-      - apt-get -qq update
-  - name: Apt-get upgrade packages.
-    plugin: Script
-    script:
-      - "DEBIAN_FRONTEND=noninteractive apt-get upgrade"
+      - mysql --version
