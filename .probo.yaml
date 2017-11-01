@@ -1,8 +1,9 @@
 image: proboci/ubuntu-14.04-lamp:php-7.1
 steps:
-  - name: Checking apache, mysql, and php version.
+  - name: Checking ubuntu, apache, mysql, and php version.
     plugin: Script
     script:
+      - lsb_release -a
       - mysql --version
       - apache2 -version
       - php -v
