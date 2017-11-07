@@ -9,3 +9,7 @@ steps:
     script:
       - drush @none dl registry_rebuild-7.x
       - drush cc drush
+  - name: Test if registry_rebuild is installed again.
+    plugin: Script
+    script:
+      - drush rr
