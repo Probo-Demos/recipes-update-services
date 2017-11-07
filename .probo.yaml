@@ -1,0 +1,7 @@
+image: proboci/ubuntu-14.04-lamp:php-7.1
+steps:
+  - name: Add registry_rebuild
+    plugin: Script
+    script:
+      - drush @none dl registry_rebuild-7.x
+      - drush cc drush
